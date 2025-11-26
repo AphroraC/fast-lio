@@ -57,7 +57,7 @@ tiled_handler.TileSpacing = 'compact';
 tiled_handler.Padding = 'compact';
 nexttile;
 hold on;
-set(gca,'FontSize',12,'FontName','Times New Roman') 
+set(gca,'FontSize',12,'FontName','Times New Roman')
 plot(timestamp_ikd, average_time_ikd,'-','Color',Color_blue,'LineWidth',1.2);
 plot(timestamp_forest, average_time_forest,'--','Color',Color_orange,'LineWidth',1.2);
 lg = legend("ikd-Tree", "ikd-Forest",'location',[0.1314 0.8559 0.2650 0.0789],'fontsize',14,'fontname','Times New Roman')
@@ -117,7 +117,7 @@ nexttile;
 hold on;
 grid on;
 box on;
-set(gca,'FontSize',12,'FontName','Times New Roman') 
+set(gca,'FontSize',12,'FontName','Times New Roman')
 plot(timestamp_ikd, alpha_bal_ikd,'-','Color',Color_blue,'LineWidth',1.2);
 plot(timestamp_ikd, alpha_del_ikd,'--','Color',Color_orange, 'LineWidth', 1.2);
 plot(timestamp_ikd, 0.6*ones(size(alpha_bal_ikd)), ':','Color','black','LineWidth',1.2);
@@ -132,4 +132,3 @@ ax3.YAxis.FontSize = 12;
 ax3.XAxis.FontSize = 12;
 % print('./Figures/fastlio_exp_combine','-depsc','-r1200')
 % exportgraphics(f,'./Figures/fastlio_exp_combine_1.pdf','ContentType','vector')
-
